@@ -1,0 +1,40 @@
+h1 {
+    text-align: center;
+}
+
+.articleContainer {
+    display: flex;
+    flex-direction: column;
+}
+
+.article {
+    border: 5px #0477e9 solid;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: #1e90ff;
+}
+
+.article span {
+    font-weight: bold;
+    float: right;
+}
+
+.unrequired {
+    display: none;
+}
+
+@media screen and (min-width: 768px) {
+    .unrequired {
+        display: block;
+        background-color: darksalmon;
+    }
+
+    .articleContainer {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .article {
+        width: 25vw;
+    }
+}
